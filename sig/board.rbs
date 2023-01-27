@@ -1,0 +1,20 @@
+# TypeProf 0.21.2
+
+# Classes
+class Board
+  @rows: Hash[Integer, TileSet]
+  @cols: Hash[Integer, TileSet]
+  @squares: Hash[Integer, TileSet]
+  @blank_ids: Array[Integer]
+  @tiles: Array[Tile]
+
+  def self.load_from_file: (String) -> Board
+
+  attr_accessor blank_ids: Array[Integer]
+  attr_accessor tiles: Array[Tile]
+
+  def init: -> void
+  def to_s: -> String
+  def validate: -> String?
+  def possible_digits: (Tile tile) -> PossibleDigits
+end

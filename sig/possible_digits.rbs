@@ -1,0 +1,13 @@
+# TypeProf 0.21.2
+
+# Classes
+class PossibleDigits
+  @possible_digits: Hash[Integer, bool]
+
+  def initialize: (Hash[Integer, bool] possible_digits) -> void
+  def []: (Integer)-> bool
+  def multiple: (PossibleDigits other) -> PossibleDigits
+  def add: (Integer i) -> bool
+  def remove: (Integer i) -> bool
+  def to_s: -> String
+end

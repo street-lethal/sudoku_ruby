@@ -1,0 +1,20 @@
+# TypeProf 0.21.2
+
+# Classes
+class Walker
+  @tiles: Array[Tile]
+  @step: Integer
+  @len: Integer
+  @possible_digits: Hash[Integer, PossibleDigits]
+  @stepped_back: bool
+
+  attr_reader stepped_back: bool
+
+  def initialize: (Array[Tile] tiles) -> void
+  def current_tile: -> Tile
+  def store_possible_digits: (PossibleDigits possible_digits) -> void
+  def stored_possible_digits: -> PossibleDigits
+  def set_one_possible_digit: -> void
+  def step_forward: -> void
+  def step_back: -> void
+end

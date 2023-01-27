@@ -1,0 +1,14 @@
+# TypeProf 0.21.2
+
+# Classes
+class Tile
+  attr_accessor digit: Integer
+  attr_accessor default: bool
+  attr_accessor row: Integer
+  attr_accessor col: Integer
+  attr_accessor square: Integer
+  def blank?: -> bool
+  def set: (Integer digit) -> Integer
+  def clear: -> Integer
+  def to_s: -> String
+end

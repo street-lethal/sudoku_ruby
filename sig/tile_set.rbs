@@ -1,0 +1,13 @@
+# TypeProf 0.21.2
+
+# Classes
+class TileSet
+  @tiles: untyped
+
+  def initialize: (Array[Tile] tiles) -> void
+  def <<: (Tile)-> void
+  def []: (Integer)-> Tile
+  def filled?: -> bool
+  def duplicates?: -> bool
+  def possible_digits: -> PossibleDigits
+end
